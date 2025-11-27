@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Definition and Examples</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="#">Bootstrap Guide</a>
+            <span class="navbar-text text-white-50">v5.3</span>
+        </div>
+    </nav>
+
+    <div class="container my-5">
+        <header class="text-center mb-5">
+            <h1 class="display-4 text-primary">What is Bootstrap?</h1>
+            <p class="lead">The world's most popular framework for building responsive, mobile-first sites.</p>
+        </header>
+
+        <section class="mb-5 p-4 bg-light border-start border-5 border-info rounded">
+            <h2>Definition 📝</h2>
+            <p><strong>Bootstrap</strong> is a free, open-source **front-end development framework** that provides HTML, CSS, and (optionally) JavaScript templates for common user interface components, typography, forms, buttons, tables, navigation, and more.</p>
+            <p>It's built with a **mobile-first** philosophy, meaning it ensures websites look and function great on smaller screens before scaling up to desktops. Its primary goal is to make web development faster and easier by providing a consistent, ready-to-use library of styles and components.</p>
+            <p>The core of Bootstrap is its responsive **Grid System**, which allows developers to easily lay out page content using rows and a 12-column structure.</p>
+        </section>
+        
+        <hr class="my-5">
+
+        <section>
+            <h2 class="mb-4 text-primary">Examples in Action 🚀</h2>
+
+            <div class="card shadow-sm mb-4">
+                <div class="card-header bg-success text-white">
+                    <h5>Example 1: Buttons & Contextual Colors</h5>
+                </div>
+                <div class="card-body">
+                    <p>Bootstrap uses contextual classes (like `primary`, `success`, `danger`) to quickly style elements:</p>
+                    <button type="button" class="btn btn-primary me-2">Primary Button</button>
+                    <button type="button" class="btn btn-success me-2">Success Button</button>
+                    <button type="button" class="btn btn-danger me-2">Danger Button</button>
+                    <button type="button" class="btn btn-warning me-2">Warning Button</button>
+                </div>
+                <div class="card-footer bg-light">
+                    <code>&lt;button class="btn btn-primary"&gt;...&lt;/button&gt;</code>
+                </div>
+            </div>
+
+            <div class="card shadow mb-4">
+                <div class="card-header bg-info text-white">
+                    <h5>Example 2: Card Component</h5>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">A Simple Card</h5>
+                                    <h6 class="card-subtitle mb-2 text-muted">A Content Box</h6>
+                                    <p class="card-text">Cards are flexible and extendable content containers. They include options for headers, footers, a wide variety of content, contextual background colors, and powerful display options.</p>
+                                    <a href="#" class="btn btn-info btn-sm">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer bg-light">
+                    <code>&lt;div class="card"&gt;...&lt;/div&gt;</code>
+                </div>
+            </div>
+
+            <div class="card shadow mb-4">
+                <div class="card-header bg-secondary text-white">
+                    <h5>Example 3: Responsive Grid System</h5>
+                </div>
+                <div class="card-body">
+                    <p>The grid is based on a 12-column layout. Classes like <code>.col-md-6</code> control layout across different screen sizes.</p>
+                    <div class="row text-center">
+                        <div class="col-12 col-md-6 p-2">
+                            <div class="p-3 bg-dark text-white rounded">.col-md-6</div>
+                        </div>
+                        <div class="col-12 col-md-6 p-2">
+                            <div class="p-3 bg-dark text-white rounded">.col-md-6</div>
+                        </div>
+                        <div class="col-4 p-2">
+                            <div class="p-3 bg-light border rounded">.col-4</div>
+                        </div>
+                        <div class="col-4 p-2">
+                            <div class="p-3 bg-light border rounded">.col-4</div>
+                        </div>
+                        <div class="col-4 p-2">
+                            <div class="p-3 bg-light border rounded">.col-4</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer bg-light">
+                    <code>&lt;div class="row"&gt;&lt;div class="col-md-6"&gt;...&lt;/div&gt;...&lt;/div&gt;</code>
+                </div>
+            </div>
+
+        </section>
+    </div>
+
+    <footer class="bg-dark text-white-50 text-center py-3">
+        <div class="container">
+            <small>&copy; 2025 Bootstrap Examples | Built with Bootstrap 5</small>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
